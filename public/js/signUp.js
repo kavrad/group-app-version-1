@@ -15,7 +15,7 @@ async function submitHandler(){
     }
     console.log(obj);
     let response=await axios.post('http://localhost:1000/add-user',obj);
-    alert(response.data.message);
+    console.log(response);
     window.location.href="http://localhost:1000/login";
 }
 form.addEventListener('submit',submitHandler);
