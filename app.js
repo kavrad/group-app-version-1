@@ -12,7 +12,7 @@ server.use(express.static(path.join(__dirname,'public')));
 
 server.use(signUpRoutes);
 
-sequelize.sync({force:true}).then((result)=>{
+sequelize.sync().then((result)=>{
     console.log(result);
     
     server.listen(port,function(err){
