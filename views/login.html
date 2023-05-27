@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-title" >
+        <span style="color: white;font-family: Abril Fatface; font-size: 3em;">Welcome Back!!</span>
+        <span style='font-size:70px;'>&#128526;</span>
+    </div>
+    <form action="/user/login" method="POST" id="form">
+      <label for="email" class="form-label">Enter your email:</label><br>
+      <input type="email" name="email" id="emailLogin" required style="color: black;"><br>
+      <label for="password" class="form-label">Enter your Password:</label><br>
+      <input type="password" name="password" id="passwordLogin" required style="color: black;"><br>
+      <button type="submit" id="submit-btn">Login</button><br>
+    </form>
+    <div class="new-user">
+    <span>New User??</span>
+    <a href="http://localhost:1000/">Sign Up</a>
+    </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script src="/js/login.js"></script>
+</html>
