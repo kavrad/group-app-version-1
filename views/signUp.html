@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-title">
+         <span>Sign Up</span>
+         <span>&#128591;</span>
+        </div>
+    <form action="/add-user" method="POST" id="form">
+     <label for="name">Name:</label>
+     <input type="text" name="name" id="name" required><br>
+     <label for="email">Email:</label>
+     <input type="email" name="email" id="email" required><br>
+     <label for="phone-number"> Enter Phone Number: </label>
+     <input type="number" name="phoneNumber" id="phone-number" required><br>
+     <label for="password">Password:</label>
+     <input type="password" name="password" id="password" required><br>
+     <button type="submit" id="submit-btn">Sign Up</button>
+    </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="/js/signUp.js"></script>
+</body>
+</html>
